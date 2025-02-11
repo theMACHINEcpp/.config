@@ -1,0 +1,5 @@
+[plugin]
+deps = [{ use = "KKV9/compress", rev = "60b24af" }, { use = "dawsers/fuse-archive", rev = "850bc76" }]
+
+[flavor]
+deps = [{ use = "kmlupreti/ayu-dark", rev = "441a38d" }]

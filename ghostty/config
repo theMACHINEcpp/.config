@@ -1,0 +1,48 @@
+
+# The syntax is "key = value". The whitespace around the
+# equals doesn't matter.
+background = 000000
+foreground = ffffff
+theme = "ayu"
+
+# Comments start with a `#` and are only valid on their own line.
+# Blank lines are ignored!
+
+keybind = alt+p=close_surface
+keybind = alt+ctrl+l=new_split:right
+keybind = alt+ctrl+j=new_split:down
+keybind = alt+ctrl+k=new_split:up
+keybind = alt+ctrl+h=new_split:left
+
+keybind = alt+l=goto_split:right
+keybind = alt+j=goto_split:bottom
+keybind = alt+k=goto_split:top
+keybind = alt+h=goto_split:left
+
+keybind = alt+shift+l=resize_split:right,10
+keybind = alt+shift+j=resize_split:down,10
+keybind = alt+shift+k=resize_split:up,10
+keybind = alt+shift+h=resize_split:left,10
+keybind = alt+u=toggle_split_zoom
+
+
+# Empty values reset the configuration to the default value
+
+font-family-bold = "ComicShannsMono Nerd Font Mono"
+font-feature = -calt
+
+window-decoration = false
+window-padding-y = 0,0
+window-padding-x = 0,0
+window-padding-balance = true
+window-vsync = true
+gtk-adwaita = false
+gtk-tabs-location = hidden
+gtk-adwaita = true
+fullscreen
+
+adjust-cell-width = 5%
+adjust-cell-height = 7%
+
+shell-integration = zsh
+

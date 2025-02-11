@@ -1,0 +1,120 @@
+(defcfg
+process-unmapped-keys yes
+)
+
+
+(defsrc
+	 a s d f g h j k l
+	scln lalt ralt caps
+	spc f4
+    
+)
+
+(defalias
+
+	sym         (layer-toggle sympols)
+	arr			(layer-toggle arrows)
+	nor			(layer-switch normal)
+	bas			(layer-switch base)
+
+	a-sup       (tap-hold 200 200 a lmet)
+    s-shif      (tap-hold 200 200 s lsft)
+    d-ctrl      (tap-hold 200 200 d lctl)
+    f-alt       (tap-hold 200 200 f lalt)
+
+
+	h-scln      (tap-hold 1 1 scln scln)
+    j-h-alt     (tap-hold 200 200 h ralt)
+    k-j-ctrl    (tap-hold 200 200 j rctl)
+    l-k-shif    (tap-hold 200 200 k rsft)
+	scln-l-lmet (tap-hold 200 200 l rmet)
+
+	lalt-back   (tap-hold 200 200 bspc  @arr)
+	ralt-ret    (tap-hold 200 200 ret @sym)
+	caps-esc    (tap-hold 1 1 esc esc)
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	a-1			(tap-hold 200 200 1 lmet)
+	s-2			(tap-hold 200 200 2 lsft)
+	d-3			(tap-hold 200 200 3 lctl)
+	f-4			(tap-hold 200 200 4 lalt)
+	g-5			(tap-hold 200 200 5 5 )
+	scln-6		(tap-hold 200 200 6 6)
+	h-7			(tap-hold 200 200 7 ralt)
+	j-8			(tap-hold 200 200 8 rctl)
+	k-9			(tap-hold 200 200 9 rsft)
+	l-0			(tap-hold 200 200 0 rmet)
+	lalt-min    (tap-hold 200 200 min min)
+	spc-eql	    (tap-hold 200 200 eql eql)
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	h-left		(tap-hold 200 200 lft lft)
+	j-down		(tap-hold 200 200 down down)
+	k-up		(tap-hold 200 200 up up)
+	l-right		(tap-hold 200 200 rght rght)
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	f4			(tap-hold 200 200 @nor @bas)
+)
+
+
+(deflayer ( base )
+@a-sup
+@s-shif
+@d-ctrl
+@f-alt 
+g
+@h-scln 
+@j-h-alt
+@k-j-ctrl
+@l-k-shif 
+@scln-l-lmet
+@lalt-back
+@ralt-ret
+@caps-esc
+spc
+@f4
+)
+
+
+(deflayer ( sympols )
+@a-1	   
+@s-2	   
+@d-3	   
+@f-4	   
+@g-5	   
+@scln-6 
+@h-7	   
+@j-8	   
+@k-9	   
+@l-0	   
+@lalt-min
+@ralt-ret
+@caps-esc
+@spc-eql
+f4
+)
+
+
+(deflayer (arrows)
+@a-sup
+@s-shif
+@d-ctrl
+@f-alt 
+g
+@h-scln 
+@h-left
+@j-down
+@k-up
+@l-right
+@lalt-back
+@ralt-ret
+@caps-esc
+spc
+f4
+)
+
+(deflayer (normal)
+
+	 a s d f g h j k l
+	scln lalt ralt caps
+	spc @f4
+)
